@@ -17,7 +17,13 @@ int main()
     char a[I][J];
 
     system("clear");
+    newsnow(a); 
+    
+    
 
+    do
+    {
+        system("clear");
     printf("\t######  #    #   #####   #####   #      #  #       #\n");
     printf("\t##      #    #  #     #  #    #  #      #  # #   # #\n");
     printf("\t##      ######  #     #  ####    ###### #  #   #   #\n");
@@ -25,26 +31,19 @@ int main()
     printf("\t######  #    #   #####   #####   ###### #  #       #\n");
 
     printf("\n");
-        printf("\t  #####    #####       #####     ####   #      #  #\n");
-        printf("\t  #       #     #     #     #   #    #  # #  # #  #\n");
-        printf("\t  #       #     #     #     #   #    #  #   #  #  #\n");
-        printf("\t  #       #     #    #########  #    #  #      #   \n");
-        printf("\t  #        #####      #     #    ####   #      #  #\n");
-    
-    sleep(3);
-    system("clear");
-    newsnow(a); 
-    linerand(a); 
-    printfield(a);
-    sleep(1);
-
-    do
-    {
-        snow_move(a);
+    printf("\t  #####    #####       #####     ####   #      #  #\n");
+    printf("\t  #       #     #     #     #   #    #  # #  # #  #\n");
+    printf("\t  #       #     #     #     #   #    #  #   #  #  #\n");
+    printf("\t  #       #     #    #########  #    #  #      #   \n");
+    printf("\t  #        #####      #     #    ####   #      #  #\n");
+        
         linerand(a);
-        printfield(a);
-        sleep(1);
-        system("clear");
+        printfield(a); 
+        sleep(1); 
+        snow_move(a);
+        
+        linerand(a);
+        
     } while (1);
     
     return 0;
