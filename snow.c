@@ -15,7 +15,23 @@ int main()
 {
     srand(time(NULL));
     char a[I][J];
+
+    system("clear");
+
+    printf("\t######  #    #   #####   #####   #      #  #       #\n");
+    printf("\t##      #    #  #     #  #    #  #      #  # #   # #\n");
+    printf("\t##      ######  #     #  ####    ###### #  #   #   #\n");
+    printf("\t##      #    #  #     #  #    #  #    # #  #       #\n");
+    printf("\t######  #    #   #####   #####   ###### #  #       #\n");
+
+    printf("\n");
+        printf("\t  #####    #####       #####     ####   #      #  #\n");
+        printf("\t  #       #     #     #     #   #    #  # #  # #  #\n");
+        printf("\t  #       #     #     #     #   #    #  #   #  #  #\n");
+        printf("\t  #       #     #    #########  #    #  #      #   \n");
+        printf("\t  #        #####      #     #    ####   #      #  #\n");
     
+    sleep(3);
     system("clear");
     newsnow(a); 
     linerand(a); 
